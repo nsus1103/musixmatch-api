@@ -1,6 +1,8 @@
 
 import requests
 import config
+import psycopg2
+import psycopg2.extras
 
 artist = input('Enter artist name:')
 params_artist = {'format':'json','callback':'callback','q_artist':artist,'page_size':10, 'apikey':config.API_KEY}
